@@ -96,7 +96,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:290px;
   float:left;
   position:fixed;
 }
@@ -183,12 +183,14 @@ footer {
   bottom:50px;
 }
 
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
     width:auto;
     margin:0;
   }
+
   
   header, section, footer {
     float:none;
