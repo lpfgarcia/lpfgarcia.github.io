@@ -18,15 +18,15 @@
 			<h1>Wrapper</h1>
 			<p></p>
 			<p class="view"><a href="http://www.biocom.icmc.usp.br/~lpfgarcia/">View my home page<br><small>http://www.biocom.icmc.usp.br/~lpfgarcia/</small></a></p>
-			<p class="view"><b>Keywords:</b> Noisy Data; Class Noise; Noise Filters; Decomposition Strategy; Classification.
+			<p class="view"><b>Keywords:</b> Noisy Data; Class Noise; Noise Filters; Decomposition Strategies; Classification.
 		</header>
 		<section>
 	
-	<h1><p align="justify">An scheme based on One-vs-One decomposition startegy to improve the performace of noise filters in multi-class classification problems</p></h1>
+	<h1><p align="justify">Using the One-vs-One decomposition to improve the performance of noise filters via an aggregation strategy in multi-class classification problems</p></h1>
 
 	<h4>Authors: Luís P.F. Garcia, José A. Sáez, Julián Luengo, Ana C. Lorena, André C.P.L.F. de Carvalho and Francisco Herrera</h4>
 	
-	<p align="justify"><b>Abstract:</b> Noise filters are preprocessing techniques designed to improve data quality in a classification task by detecting and eliminating examples that contain errors or noise. The main advantages of their use in the preprocessing step are classifier independence and small increase in the overall computational cost, since they are applied only once to a dataset. However, filtering can also remove correct examples and examples containing valuable information, which could be useful for a classification task. Therefore, there is usually a margin of improvement on noise detection accuracy for almost any noise filter. In multi-class classification problems, which have more than two classes to be distinguished, binary decomposition strategies have been successfully used to improve the predictive performance of classifiers. For such, they decompose the original multi-class problem into several simpler binary subproblems. This paper proposes a noise filtering scheme based on the use of the One-vs-One decomposition strategy to improve the noise detection accuracy of noise filtering techniques. For such, the principles behind this decomposition strategy are adapted to noise filtering in multi-class problems, in order to make the noise identification simpler and more accurate. The experimental results show that the One-vs-One decomposition strategy increases the performance of the noise filters studied, detecting more accurately the noisy examples in multi-class classification tasks.</p>
+	<p align="justify"><b>Abstract:</b> Noise filters are preprocessing techniques designed to improve data quality in classification tasks by detecting and eliminating examples that contain errors or noise. However, filtering can also remove correct examples and examples containing valuable information, which could be useful for learning. This fact usually implies a margin of improvement on the noise detection accuracy for almost any noise filter. This paper proposes an scheme to improve the performance of noise filters in multi-class classification problems, based on decomposing the dataset into multiple binary subproblems. Decomposition strategies have proven to be successful in improving classification performance in multi-class problems by generating simpler binary subproblems. Similarly, we adapt the principles of the One-vs-One decomposition strategy to noise filtering, making the noise identification process simpler. In order to integrate the filtering results achieved in the binary subproblems, our proposal uses a soft voting approach considering a reliability level in noise prediction. The experimental results show that the One-vs-One decomposition strategy usually increases the performance of the noise filters studied, which can detect more accurately the noisy examples.</p>
 
 
 <h2><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Additional Results</h2>
@@ -35,10 +35,13 @@
 
 		<div>
 			<p align="center" style="float: left; margin-bottom: 5px; margin-right: 3px; width: 170px;"><a href="average.zip">
-			<img src="average.jpg" style="width: 170px; margin-bottom: 10px;"></a><br><a href="average.zip">Average Performance</a></p>
+			<img src="average.jpg" style="width: 170px; margin-bottom: 10px;"></a><br><a href="average.zip">Average performance</a></p>
 
 			<p align="center" style="float: left; margin-bottom: 5px; margin-right: 3px; width: 170px;"><a href="level.zip">
-			<img src="level.jpg" style="width: 170px; margin-bottom: 10px;"></a><br><a href="level.zip">Performance per Noise level</a></p>
+			<img src="level.jpg" style="width: 170px; margin-bottom: 10px;"></a><br><a href="level.zip">Performance per noise level</a></p>
+
+			<p align="center" style="float: left; margin-bottom: 5px; margin-right: 3px; width: 170px;"><a href="imbalanced.zip">
+			<img src="level.jpg" style="width: 170px; margin-bottom: 10px;"></a><br><a href="imbalanced.zip">Filtering noise in imbalanced datasets</a></p>
 
 		</div>	
 
@@ -61,7 +64,7 @@
 
 	<p>[2] J. Alcalá-Fdez, A. Fernández, J. Luengo, J. Derrac, S. García, Keel data-mining software tool: Data set repository, integration of algorithms and experimental analysis framework, Multiple-Valued Logic and Soft Computing 17 (2011) 255–287.
 
-	<p>[3] R Core Team, R: A Language and Environment for Statistical Computing, R Foundation for Statistical Computing, Vienna, Austria (2014).
+	<p>[3] R Core Team, R: A Language and Environment for Statistical Computing, R Foundation for Statistical Computing, Vienna, Austria (2015).
 		   URL http://www.r-project.org/</p>	   
 
 </body>
